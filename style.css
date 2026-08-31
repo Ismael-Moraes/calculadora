@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.tirulo {
+    margin: 25px 0px 25px 0px;
+    color: cornflowerblue;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.calc {
+    width: 400px;
+    padding: 25px;
+    background: #20252b;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+}
+
+.visor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.visorzinho {
+    width: 100%;
+    height: 80px;
+    margin: 0 0 20px 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 15px;
+    border: 2px solid #111;
+    background: #0d2f21;
+    color: #eafff4;
+    font-size: 32px;
+    font-family: "Courier New", monospace;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.5),
+}
+
+
+.resul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.resul button, .strogonoff {
+    height: 55px;
+    border: none;
+    border-radius: 14px;
+    background: #555b63;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+#bResu {
+    background: cornflowerblue;
+}
+#apagAll {
+    background: #b52b2b;
+}
+
+
+.areaBotoes {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.numeros {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.numeros button {
+    width: 100%;
+    height: 65px;
+    border: none;
+    border-radius: 15px;
+    background: #343a40;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #252a2f;
+}
+
+.operacoes {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.operacoes button {
+    width: 100%;
+    height: 65px;
+    border: none;
+    border-radius: 15px;
+    background: #d88919;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #9c6010;
+}
+
+button:hover {
+    filter: brightness(1.15);
+}
+button:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+#bResu:hover {
+    background: #6f9bea;
+}
+#bResu:active {
+    background: #557fc9;
+}
